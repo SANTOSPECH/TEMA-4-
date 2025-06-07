@@ -1,0 +1,20 @@
+--Cargar archivo:
+consult('/Users/palomags/Desktop/Tema 4/riegoIoT.pl').
+
+--Visualizar base de conocimientos:
+
+listing.
+
+listing(activar_riego).
+
+--Consultas:
+
+activar_riego.
+
+hora_adecuada.
+
+pronostico_lluvia(X).
+
+estado_riego(X).
+
+recomendacion.

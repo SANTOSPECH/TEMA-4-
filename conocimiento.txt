@@ -1,0 +1,45 @@
+La base de conocimientos simula el comportamiento de un sistema de riego inteligente usando programación lógica en Prolog. Se basa en información proveniente de sensores (humedad del suelo, temperatura, hora del día y pronóstico de lluvia) y aplica reglas lógicas para tomar decisiones automáticas sobre cuándo y cómo regar.
+
+Estado actual de los sensores:
+
+--La humedad del suelo está baja.
+
+--La temperatura es de 35 grados Celsius.
+
+--Son las 20 horas (8 de la noche).
+
+--No se espera lluvia.
+
+
+Reglas del sistema:
+
+1.- El sistema considera que la hora es adecuada para regar si es antes de las 10 a. m. o después de las 6 p. m..
+
+2.- El riego se activa automáticamente si:
+
+--La humedad del suelo es baja,
+
+--No se pronostica lluvia,
+
+--Y es una hora adecuada para regar.
+
+3.- Si el riego está activado, se registra el estado como "Activado"; si no, como "No activado".
+
+4.-Alerta por condiciones extremas:
+
+Si la temperatura es mayor o igual a 32°C, se activa una alerta por calor extremo.
+
+Si el riego se activa bajo esas condiciones, el sistema emite una recomendación:
+
+“Alerta: Riego activado con temperatura alta. Considere riego nocturno o por goteo.”
+
+5.-En caso contrario, indica:
+
+“Sin recomendaciones especiales para el riego.”
+
+
+Este sistema demuestra cómo reglas lógicas pueden modelar decisiones automatizadas, comunes en sistemas de IoT (Internet de las Cosas). 
+
+También ejemplifica cómo representar conocimiento y construir inferencias con un enfoque declarativo y lógico, sin necesidad de estructuras de control explícitas como las que se usan en otros paradigmas.
+
+
